@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,61 @@
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
+
 <body>
-    
+    <header>
+        <h2 class="text-center text-primary">Money Master</h2>
+    </header>
+    <main>
+        <section class="container mt-5">
+            <div class="d-flex gap-5 flex-column-reverse flex-md-row">
+                <div>
+                    <img src="images/money.png" alt="" class="w-100 h-100">
+                </div>
+                <div class="bg-light p-2 rounded">
+                    <div class="mt-4 mx-3 text-center">
+                        <h4 class="mb-3">Income</h4>
+                        <span>Income:</span>
+                        <input type="number" class="ms-2 border border-0 py-2 ps-3 pe-5"
+                            style="background-color: rgb(211, 205, 205);" placeholder="$ Enter your income">
+                    </div>
+                    <div class="mt-4 mx-3 text-center">
+                        <h4 class="mb-3">Expenses</h4>
+                        <div class="mb-2">
+                            <span>Food:</span>
+                            <input type="number" class=" ms-4 border border-0 py-2 ps-3 pe-5"
+                                style="background-color: rgb(211, 205, 205);" placeholder="$ Enter food expenses">
+                        </div>
+                        <div class="mb-2">
+                            <span>Rent:</span>
+                            <input type="number" class=" ms-4 border border-0 py-2 ps-3 pe-5"
+                                style="background-color: rgb(211, 205, 205);" placeholder="$ Enter rent expenses">
+                        </div>
+                        <div class="mb-2">
+                            <span>Clothes:</span>
+                            <input type="number" class="ms-2 border border-0 py-2 ps-3 pe-5"
+                                style="background-color: rgb(211, 205, 205);" placeholder="$ Enter clothes expenses">
+                        </div>
+                        <button class="btn btn-primary px-5 mt-3 py-2 rounded">Calculate</button>
+
+                        <h5 class="py-3">Total Expenses: <span id="total-expense"></span> </h5>
+                        <h5 class="pb-3">Balance: <span id="total-balance"></span> </h5>
+                        <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span>Save:</span>
+                            <input type="number" class=" border border-0 py-2"
+                                style="background-color: rgb(211, 205, 205);">
+                            <span>%</span>
+                            <button class="btn btn-primary px-4 rounded">Save</button>
+                        </div>
+                        <h5 class="py-3">Saving Amount: <span id="saving-amount"></span> </h5>
+                        <h5 class="pb-3">Remaining Balance: <span id="remaining-balance"></span> </h5>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
