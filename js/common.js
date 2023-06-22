@@ -1,7 +1,9 @@
 function getInputFieldValueById(inputId){
     const inputFieldElement = document.getElementById(inputId);
-    const inputFieldValue = parseFloat(inputFieldElement.value);
+    const inputFieldValueString = inputFieldElement.value;
+    const inputFieldValue = parseFloat(inputFieldValueString);
     return inputFieldValue;
+    
 }
 function getElementValueById(elementId){
     const element = document.getElementById(elementId);
@@ -11,4 +13,8 @@ function getElementValueById(elementId){
 function setElementValueById(elementId, newValue){
     const totalExpenseElemet = document.getElementById(elementId);
     totalExpenseElemet.innerText = newValue.toFixed(2);
+}
+function emptyElement(elementId){
+    const element = document.getElementById(elementId);
+    element.innerText = '';
 }
