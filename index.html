@@ -23,27 +23,27 @@
                     <div class="mt-4 mx-3 text-center">
                         <h4 class="mb-3">Income</h4>
                         <span>Income:</span>
-                        <input type="number" class="ms-2 border border-0 py-2 ps-3 pe-5"
+                        <input type="text" id="income-input-field" class="ms-2 border border-0 py-2 ps-3 pe-5"
                             style="background-color: rgb(211, 205, 205);" placeholder="$ Enter your income">
                     </div>
                     <div class="mt-4 mx-3 text-center">
                         <h4 class="mb-3">Expenses</h4>
                         <div class="mb-2">
                             <span>Food:</span>
-                            <input type="number" class=" ms-4 border border-0 py-2 ps-3 pe-5"
+                            <input type="text" id="food-expense-field" class=" ms-4 border border-0 py-2 ps-3 pe-5"
                                 style="background-color: rgb(211, 205, 205);" placeholder="$ Enter food expenses">
                         </div>
                         <div class="mb-2">
                             <span>Rent:</span>
-                            <input type="number" class=" ms-4 border border-0 py-2 ps-3 pe-5"
+                            <input type="text" id="rent-expense-field" class=" ms-4 border border-0 py-2 ps-3 pe-5"
                                 style="background-color: rgb(211, 205, 205);" placeholder="$ Enter rent expenses">
                         </div>
                         <div class="mb-2">
                             <span>Clothes:</span>
-                            <input type="number" class="ms-2 border border-0 py-2 ps-3 pe-5"
+                            <input type="text" id="cloth-expense-field" class="ms-2 border border-0 py-2 ps-3 pe-5"
                                 style="background-color: rgb(211, 205, 205);" placeholder="$ Enter clothes expenses">
                         </div>
-                        <button class="btn btn-primary px-5 mt-3 py-2 rounded">Calculate</button>
+                        <button id="btn-calculation" class="btn btn-primary px-5 mt-3 py-2 rounded">Calculate</button>
 
                         <h5 class="py-3">Total Expenses: <span id="total-expense"></span> </h5>
                         <h5 class="pb-3">Balance: <span id="total-balance"></span> </h5>
@@ -62,6 +62,9 @@
             
         </section>
     </main>
+    <script src="js/common.js"></script>
+    <script src="js/calculation.js"></script>
+    <script src="js/saving.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
